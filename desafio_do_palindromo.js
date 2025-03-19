@@ -15,8 +15,7 @@ function essaPalavraEUmPalindromo () {
 essaPalavraEUmPalindromo();
 
 // EXEMPLO DE FUNCION EXPRESS
-/*    const essaPalavraEUmPalindromo = function () {
-    var palavra = "rever";
+/*    const essaPalavraEUmPalindromo = function (palavra) {
     var separandoAsLetraDaPalavra = palavra.split("") // função do js para quebrar as palavras em uma lista de arrays
     var palavraInvertida = separandoAsLetraDaPalavra.reverse();
 
@@ -27,5 +26,7 @@ essaPalavraEUmPalindromo();
         console.log("A palavra"+ palavra + "É um palídromo!");
     }else{ 
         console.log("A palavra"+ palavra + "não é um palíndromo!");
-    }
+    };
+    
+    essaPalavraEUmPalindromo("radar")
 } */
