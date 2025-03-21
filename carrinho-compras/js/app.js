@@ -5,6 +5,18 @@ function adicionar(){
 // recuperar valores, nome do produto, quantidade e valor
 let produto = document.getElementById('produto').value;
 let quantidade = document.getElementById('quantidade').value;
+
+//verifica se o produto selecionado é valido
+if (!produto || produto.trim()=== ""){  // o método trim(), que remove os espaços desnecessários de uma string.
+    alert("Selecione um produto válido.");
+}
+
+//verifica se a quantidade inserida é valida
+if(isNaN(quantidade) || quantidade <=0){    // O método Number.isNaN() é usado para verificar se um valor é NaN, ou seja, Not a Number. 
+    alert("Insira uma quantidade válida."); 
+    return;
+}
+
 let nomeProduto = produto.split('-')[0];
 let valorUnitario = produto.split('$')[1];
 
